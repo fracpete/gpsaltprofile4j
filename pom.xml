@@ -5,7 +5,7 @@
 
   <groupId>com.github.fracpete</groupId>
   <artifactId>gpsaltprofile4j</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <parent>
@@ -113,7 +113,7 @@
     <connection>scm:git:https://github.com/fracpete/gpsaltprofile4j</connection>
     <developerConnection>scm:git:https://github.com/fracpete/gpsaltprofile4j</developerConnection>
     <url>https://github.com/fracpete/gpsaltprofile4j</url>
-    <tag>gpsaltprofile4j-0.0.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <build>
