@@ -53,6 +53,13 @@ if (msg != null)
   System.err.println(msg);
 ```
 
+## Releases
+
+The following releases are available:
+
+* [0.0.1](https://github.com/fracpete/gpsaltprofile4j/releases/download/gpsaltprofile4j-0.0.1/gpsaltprofile4j-0.0.1-bin.zip)
+
+
 ## Maven
 
 Use the following dependency to include the library in your Maven project:
