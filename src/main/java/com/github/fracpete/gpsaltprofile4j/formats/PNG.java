@@ -14,7 +14,7 @@
  */
 
 /*
- * CSV.java
+ * PNG.java
  * Copyright (C) 2018 FracPete
  */
 
