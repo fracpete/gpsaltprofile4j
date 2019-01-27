@@ -70,3 +70,9 @@ Use the following dependency to include the library in your Maven project:
       <version>0.0.1</version>
     </dependency>
 ```
+
+## Screenshot
+
+Example profile:
+
+![Example profile](src/site/resources/profile_example.png)
