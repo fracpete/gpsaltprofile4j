@@ -15,7 +15,7 @@
 
 /*
  * PNG.java
- * Copyright (C) 2018 FracPete
+ * Copyright (C) 2018-2025 FracPete
  */
 
 package com.github.fracpete.gpsaltprofile4j.formats;
@@ -24,9 +24,9 @@ import com.github.fracpete.gpsformats4j.core.OptionUtils;
 import gnu.trove.list.TDoubleList;
 import gnu.trove.list.array.TDoubleArrayList;
 import net.sourceforge.argparse4j.ArgumentParsers;
+import net.sourceforge.argparse4j.helper.HelpScreenException;
 import net.sourceforge.argparse4j.inf.ArgumentParser;
 import net.sourceforge.argparse4j.inf.Namespace;
-import net.sourceforge.argparse4j.internal.HelpScreenException;
 import org.apache.commons.csv.CSVRecord;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;

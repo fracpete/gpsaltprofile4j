@@ -15,7 +15,7 @@
 
 /*
  * Generate.java
- * Copyright (C) 2018 FracPete
+ * Copyright (C) 2018-2025 FracPete
  */
 
 package com.github.fracpete.gpsaltprofile4j;
@@ -28,9 +28,9 @@ import com.grum.geocalc.Coordinate;
 import com.grum.geocalc.EarthCalc;
 import com.grum.geocalc.Point;
 import net.sourceforge.argparse4j.ArgumentParsers;
+import net.sourceforge.argparse4j.helper.HelpScreenException;
 import net.sourceforge.argparse4j.inf.ArgumentParser;
 import net.sourceforge.argparse4j.inf.Namespace;
-import net.sourceforge.argparse4j.internal.HelpScreenException;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.commons.csv.CSVRecordFactory;
 
