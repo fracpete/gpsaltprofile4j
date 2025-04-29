@@ -109,7 +109,7 @@ public class Generate
     for (i = 0; i < com.github.fracpete.gpsaltprofile4j.formats.Formats.allFormats().length; i++)
       formatsOut[i] = com.github.fracpete.gpsaltprofile4j.formats.Formats.allFormats()[i].getSimpleName();
 
-    m_Parser = ArgumentParsers.newArgumentParser(getClass().getSimpleName());
+    m_Parser = ArgumentParsers.newFor(getClass().getSimpleName()).build();
 
     m_Parser.description("Generates altitude profiles from GPS traces with altitude information.");
     m_Parser.defaultHelp(true);
@@ -350,6 +350,9 @@ public class Generate
         result.add(CSVRecordFactory.newRecord(values, map));
 	continue;
       }
+
+      if (pointOld == null)
+        continue;
 
       dist = EarthCalc.gcdDistance(pointOld, pointCur);
       distTotal += dist;

@@ -76,7 +76,7 @@ public class PNG
     m_Width  = DEFAULT_WIDTH;
     m_Height = DEFAULT_HEIGHT;
     
-    m_Parser = ArgumentParsers.newArgumentParser(getClass().getSimpleName());
+    m_Parser = ArgumentParsers.newFor(getClass().getSimpleName()).build();
 
     m_Parser.description("Options for the PNG format.");
     m_Parser.defaultHelp(true);
@@ -189,8 +189,8 @@ public class PNG
     dist = new TDoubleArrayList();
     elev = new TDoubleArrayList();
     for (CSVRecord rec: data) {
-      dist.add(Double.parseDouble("" +rec.get(KEY_DISTANCE)));
-      elev.add(Double.parseDouble("" +rec.get(KEY_ELEVATION)));
+      dist.add(Double.parseDouble(rec.get(KEY_DISTANCE)));
+      elev.add(Double.parseDouble(rec.get(KEY_ELEVATION)));
     }
     dataset.addSeries("Elevation", new double[][]{elev.toArray(), dist.toArray()});
 

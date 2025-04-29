@@ -59,7 +59,6 @@ public class CSV
     CSVPrinter		printer;
     FileWriter		writer;
     boolean		first;
-    int			i;
     CSVRecord		header;
     List<String>	values;
     Map<String,Integer>	map;
@@ -83,7 +82,7 @@ public class CSV
 	  values.add(KEY_TIME);
 	  values.add(KEY_DISTANCE);
 	  values.add(KEY_ELEVATION);
-	  header = CSVRecordFactory.newRecord(values.toArray(new String[values.size()]), map);
+	  header = CSVRecordFactory.newRecord(values.toArray(new String[0]), map);
 	  printer.printRecord(header);
 	}
 	printer.printRecord(rec);
